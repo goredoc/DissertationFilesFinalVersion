@@ -364,7 +364,7 @@ log_dens_like_jones <- function(params,
     #}
 
     sac = auxdata$speedaccuracyYN[[bl]][1]
-    if (sac==1) {params["b"] <- params["b_acc"]}
+    if (sac==1) {params["b"] <- params["b_speed"]}
     else {params["b"] <- params["b_acc"]}
     # T0 = 100
     # t <- data$t_list[[bl]] - 100
